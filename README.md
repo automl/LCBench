@@ -48,9 +48,10 @@ $ cat requirements.txt | xargs -n 1 -L 1 pip install
 ```
 
 ## Downloading the data
+Downlaod links:
 
 
-## Using the API
+## Quickstart
 
 Loading the data:
 
@@ -66,10 +67,18 @@ Querying:
 bench.query(dataset_name="credit-g", tag="Train/loss", config_id=0)
 ```
 
+Listing available tags:
+
+```py
+bench.get_queriable_tags()
+```
+
+Note: Tags starting with "Train/" indicate metrics that are logged every epoch.
+
 
 ## Examples
 
-A jupyter notebook example is given in [API Example](add_link). For documentation you can also call help on the API methods or check the source.
+An extended introduction is given in the jupyter notebook example in [API Example](https://github.com/automl/LCBench/blob/master/notebooks/API%20Example.ipynb). For documentation you can also call help on the API methods or check the source.
 
 ## Tasks for the DL lecture 19/20
-For the final project of the DL lecture, default tasks are defined in [notebooks](). Each notebook contains a short description of the task and a very basic example.
+For the final project of the DL lecture, default tasks are defined in [notebooks](https://github.com/automl/LCBench/tree/master/notebooks). Each notebook contains a short description of the task and a very basic example.
