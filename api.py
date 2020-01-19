@@ -75,13 +75,16 @@ class Benchmark():
 
         return self.query(dataset_name, tag, desired_position)
         
-    def get_queriable_tags(self):
+    def get_queriable_tags(self, dataset_name=None, config_id=None):
         """Returns a list of all queriable tags"""
-        dummy_dataset_name = list(self.data.keys())[0]
-        dummy_config_id = list(self.data[dummy_dataset_name].keys())[0]
-        log_tags = list(self.data[dummy_dataset_name][dummy_config_id]["log"].keys())
-        result_tags = list(self.data[dummy_dataset_name][dummy_config_id]["results"].keys())
-        config_tags = list(self.data[dummy_dataset_name][dummy_config_id]["config"].keys())
+        if dataset_name is None or config_id is None:
+            dataset_name = list(self.data.keys())[0]
+            config_id = list(self.data[dataset_name].keys())[0]
+        else:
+            config_id = str(config_id)
+        log_tags = list(self.data[dataset_name][config_id]["log"].keys())
+        result_tags = list(self.data[dataset_name][config_id]["results"].keys())
+        config_tags = list(self.data[dataset_name][config_id]["config"].keys())
         additional = ["config"]
         return log_tags+result_tags+config_tags+additional
     
