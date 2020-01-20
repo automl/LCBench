@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 class Benchmark():
     """API for TabularBench."""
     
-    def __init__(self, data_dir, cache=True, cache_dir="cached/"):
+    def __init__(self, data_dir, cache=False, cache_dir="cached/"):
         """Initialize dataset (will take a few seconds-minutes).
         
         Keyword arguments:
