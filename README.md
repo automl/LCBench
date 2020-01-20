@@ -48,7 +48,8 @@ $ cat requirements.txt | xargs -n 1 -L 1 pip install
 ```
 
 ## Downloading the data
-Downlaod links:
+
+You can download the data on [figshare](https://figshare.com/projects/LCBench/74151). Lightweight versions are indicated by 'lw'. Futhermore, you can find the meta-features for all datasets in the same project.
 
 
 ## Quickstart
