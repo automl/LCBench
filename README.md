@@ -83,3 +83,6 @@ An extended introduction is given in the jupyter notebook example in [API Exampl
 
 ## Tasks for the DL lecture 19/20
 For the final project of the DL lecture, default tasks are defined in [notebooks](https://github.com/automl/LCBench/tree/master/notebooks). Each notebook contains a short description of the task and a very basic example.
+
+## Leaderboard for Default Project
+https://docs.google.com/spreadsheets/d/1igH18oFYT5yMNhbqJSVOiG-7SjZ0owvEn5sFJ-nxHDE/edit#gid=0
