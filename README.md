@@ -86,3 +86,17 @@ For the final project of the DL lecture, default tasks are defined in [notebooks
 
 ## Leaderboard for Default Project
 https://docs.google.com/spreadsheets/d/1igH18oFYT5yMNhbqJSVOiG-7SjZ0owvEn5sFJ-nxHDE/edit#gid=0
+
+## Citation
+
+```
+@article { ZimLin2021a,
+  author = {Lucas Zimmer and Marius Lindauer and Frank Hutter},
+  title = {Auto-PyTorch Tabular: Multi-Fidelity MetaLearning for Efficient and Robust AutoDL},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year = {2021},
+  volume = {43},
+  number = {9},
+  pages = {3079 - 3090}
+}
+```
