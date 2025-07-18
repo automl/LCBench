@@ -107,6 +107,7 @@ class Benchmark():
     
     def get_config(self, dataset_name, config_id):
         """Returns the configuration of a run specified by dataset name and config id"""
+        config_id = str(config_id)
         if dataset_name not in self.dataset_names:
             raise ValueError("Dataset name not found.")
         return self.data[dataset_name][config_id]["config"]
